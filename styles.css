@@ -1,14 +1,16 @@
-/* Card Css */
+/* Additional CSS for consistent card sizes */
+.card {
+  height: 700px; /* Fixed height */
+  display: flex;
+  flex-direction: row; /* Stack content vertically */
+  justify-content: space-between; /* Space between items */
+}
 
-/* styles.css */
-/* .card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .card {
-    margin: 15px 0;
-  }
-   */
+.card img {
+  max-height: 300px; /* Limit image height */
+  object-fit: cover; /* Cover the space without stretching */
+}
 
+.card-body {
+  flex-grow: 1; /* Allow card body to grow and fill available space */
+}
